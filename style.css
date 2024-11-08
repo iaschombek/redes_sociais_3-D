@@ -13,10 +13,13 @@ body{
     background-color: var(--cor-fundo);
     color: var(--cor-preta);
     font-family: var(--font);
+    height: 100vh;
+    margin:0;
 }
 header{
     background-color: var(--cor-fundo);
     text-align: center;
+    padding: 1px;
 }
 h1{
     font-size: 2rem;
@@ -33,6 +36,24 @@ nav a{
     color: var(--cor-preta);
     margin: 0 2rem 1rem 0;
     font-size: 1.2rem;
+}
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(0.90);
+    transition: tranform 0.1s;
+}
+.graficos-container {
+    margin: 5rem;
+}
+.graficos-container__texto {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 2rem;
+    border: var(--cor-secundaria) solid 2px;
+}
+span {
+    font-weight: bold;
+    color: var(--cor-secundaria);
 }
 footer{
     display: flex;
